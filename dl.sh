@@ -7,9 +7,11 @@ read -p "Enter file name to save: " NAME
 echo "Paste the url and press Enter:"
 read -r URL
 
+echo " "
 echo -e "\e[32mURL is $URL\e[0m"
-
-echo -e  "\e[32mFile Name is $NAME\e[0m"
+echo " "
+echo -e "\e[32mFile Name is $NAME\e[0m"
+echo " "
 
 /usr/bin/n-m3u8dl-re "$URL" \
     -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0" \
